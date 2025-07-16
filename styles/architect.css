@@ -17,6 +17,9 @@
 .dark-02{
     color: #424242;
 }
+.dark-03{
+    color: #727272;
+}
 
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
@@ -35,7 +38,16 @@
     background-color: rgb(185, 103, 9);
     transition: all linear .5s;
 }
-
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+main > section{
+    margin-top: 130px;
+}
 /* nav style */
 
 .navber{
@@ -75,6 +87,41 @@
 .banner-img{
     width: 100%;
 }
+
+
+/* teams sections  */
+
+.teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    border-radius: 20px;
+}
+.our-features{
+    margin-left: 50px;
+    max-width: 500px;
+}
+
+.feature-title{
+    font-size: 2rem;
+    font-weight: 800;
+}
+#quick-list{
+    font-weight: 500;
+    color: #727272;
+    
+}
+#feature{
+    color:rgba(255, 144, 14, 1) ;
+}
+
+
 /* responsive  */
 @media screen and (max-width:576px) {
     .navber, .nav-links{
@@ -82,3 +129,4 @@
     }
     
 }
+
