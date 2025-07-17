@@ -120,26 +120,63 @@ main > section{
 #feature{
     color:rgba(255, 144, 14, 1) ;
 }
+/* enjoy feature  */
+.container{
+    margin-right: 2.5rem;
+}
+.enjoy-feature-title{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+
+.enjoy-title{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.enjoy-element{
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgb(235, 230, 230);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+.enjoy-img{
+    height: 1700px;
+}
 
 
 /* small screen responsive  */
 @media screen and (max-width:576px) {
     .navber,
      .nav-links,
-     .teams{
+     .teams,
+     .enjoy-feature{
         flex-direction: column;
     }
     .team-img-container{
         grid-template-columns: repeat(1,1fr);
     }
+    .enjoy-img{
+        width: 100%;
+        height: auto;
+    }
     
 }
 /* medium screen responsive  */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
+    .teams,
+    .enjoy-feature{
         flex-direction: column;
     }
     .team-img-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .enjoy-img{
+        width: 100%;
+        height: auto;
+    }
 }
+
+
+
